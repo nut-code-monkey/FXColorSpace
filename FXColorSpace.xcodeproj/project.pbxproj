@@ -79,6 +79,7 @@
 		5049E8261827F69200AEFD69 /* UIImage+FXResize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FXResize.m"; sourceTree = "<group>"; };
 		5049E8271827F69200AEFD69 /* UIImage+FXRoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FXRoundedCorner.h"; sourceTree = "<group>"; };
 		5049E8281827F69200AEFD69 /* UIImage+FXRoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FXRoundedCorner.m"; sourceTree = "<group>"; };
+		5049E8311827F7BA00AEFD69 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +109,7 @@
 		5049E7D41827F56600AEFD69 = {
 			isa = PBXGroup;
 			children = (
+				5049E8311827F7BA00AEFD69 /* README.md */,
 				5049E81C1827F69200AEFD69 /* FXColorSpace.podspec */,
 				5049E7E61827F56600AEFD69 /* FXColorSpace */,
 				5049E8081827F56700AEFD69 /* FXColorSpaceTests */,
