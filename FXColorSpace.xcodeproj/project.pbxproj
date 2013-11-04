@@ -21,6 +21,14 @@
 		5007BD6518281633005ED5F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5049E7E41827F56600AEFD69 /* UIKit.framework */; };
 		5007BD6D18281633005ED5F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5007BD6B18281633005ED5F2 /* InfoPlist.strings */; };
 		5007BD6F18281633005ED5F2 /* FXColorSpaceAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD6E18281633005ED5F2 /* FXColorSpaceAppTests.m */; };
+		5007BD8718281F86005ED5F2 /* FXColorModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD7718281F86005ED5F2 /* FXColorModels.m */; };
+		5007BD8818281F86005ED5F2 /* UIColor+FXColorSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD7A18281F86005ED5F2 /* UIColor+FXColorSpace.m */; };
+		5007BD8918281F86005ED5F2 /* UIImage+FXAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD7C18281F86005ED5F2 /* UIImage+FXAlpha.m */; };
+		5007BD8A18281F86005ED5F2 /* UIImage+FXImageCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD7E18281F86005ED5F2 /* UIImage+FXImageCreation.m */; };
+		5007BD8B18281F86005ED5F2 /* UIImage+FXPixelEmumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD8018281F86005ED5F2 /* UIImage+FXPixelEmumeration.m */; };
+		5007BD8C18281F86005ED5F2 /* UIImage+FXResize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD8218281F86005ED5F2 /* UIImage+FXResize.m */; };
+		5007BD8D18281F86005ED5F2 /* UIImage+FXRoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD8418281F86005ED5F2 /* UIImage+FXRoundedCorner.m */; };
+		5007BD8E18281F86005ED5F2 /* UIImage+NSFastEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD8618281F86005ED5F2 /* UIImage+NSFastEnumeration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,23 @@
 		5007BD6A18281633005ED5F2 /* FXColorSpaceAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FXColorSpaceAppTests-Info.plist"; sourceTree = "<group>"; };
 		5007BD6C18281633005ED5F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5007BD6E18281633005ED5F2 /* FXColorSpaceAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXColorSpaceAppTests.m; sourceTree = "<group>"; };
+		5007BD7618281F86005ED5F2 /* FXColorModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXColorModels.h; sourceTree = "<group>"; };
+		5007BD7718281F86005ED5F2 /* FXColorModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXColorModels.m; sourceTree = "<group>"; };
+		5007BD7818281F86005ED5F2 /* FXColorSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXColorSpace.h; sourceTree = "<group>"; };
+		5007BD7918281F86005ED5F2 /* UIColor+FXColorSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FXColorSpace.h"; sourceTree = "<group>"; };
+		5007BD7A18281F86005ED5F2 /* UIColor+FXColorSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FXColorSpace.m"; sourceTree = "<group>"; };
+		5007BD7B18281F86005ED5F2 /* UIImage+FXAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FXAlpha.h"; sourceTree = "<group>"; };
+		5007BD7C18281F86005ED5F2 /* UIImage+FXAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FXAlpha.m"; sourceTree = "<group>"; };
+		5007BD7D18281F86005ED5F2 /* UIImage+FXImageCreation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FXImageCreation.h"; sourceTree = "<group>"; };
+		5007BD7E18281F86005ED5F2 /* UIImage+FXImageCreation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FXImageCreation.m"; sourceTree = "<group>"; };
+		5007BD7F18281F86005ED5F2 /* UIImage+FXPixelEmumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FXPixelEmumeration.h"; sourceTree = "<group>"; };
+		5007BD8018281F86005ED5F2 /* UIImage+FXPixelEmumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FXPixelEmumeration.m"; sourceTree = "<group>"; };
+		5007BD8118281F86005ED5F2 /* UIImage+FXResize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FXResize.h"; sourceTree = "<group>"; };
+		5007BD8218281F86005ED5F2 /* UIImage+FXResize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FXResize.m"; sourceTree = "<group>"; };
+		5007BD8318281F86005ED5F2 /* UIImage+FXRoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FXRoundedCorner.h"; sourceTree = "<group>"; };
+		5007BD8418281F86005ED5F2 /* UIImage+FXRoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FXRoundedCorner.m"; sourceTree = "<group>"; };
+		5007BD8518281F86005ED5F2 /* UIImage+NSFastEnumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NSFastEnumeration.h"; sourceTree = "<group>"; };
+		5007BD8618281F86005ED5F2 /* UIImage+NSFastEnumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NSFastEnumeration.m"; sourceTree = "<group>"; };
 		5049E7E01827F56600AEFD69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5049E7E21827F56600AEFD69 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5049E7E41827F56600AEFD69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -166,6 +191,23 @@
 		5049E7E61827F56600AEFD69 /* FXColorSpace */ = {
 			isa = PBXGroup;
 			children = (
+				5007BD7618281F86005ED5F2 /* FXColorModels.h */,
+				5007BD7718281F86005ED5F2 /* FXColorModels.m */,
+				5007BD7818281F86005ED5F2 /* FXColorSpace.h */,
+				5007BD7918281F86005ED5F2 /* UIColor+FXColorSpace.h */,
+				5007BD7A18281F86005ED5F2 /* UIColor+FXColorSpace.m */,
+				5007BD7B18281F86005ED5F2 /* UIImage+FXAlpha.h */,
+				5007BD7C18281F86005ED5F2 /* UIImage+FXAlpha.m */,
+				5007BD7D18281F86005ED5F2 /* UIImage+FXImageCreation.h */,
+				5007BD7E18281F86005ED5F2 /* UIImage+FXImageCreation.m */,
+				5007BD7F18281F86005ED5F2 /* UIImage+FXPixelEmumeration.h */,
+				5007BD8018281F86005ED5F2 /* UIImage+FXPixelEmumeration.m */,
+				5007BD8118281F86005ED5F2 /* UIImage+FXResize.h */,
+				5007BD8218281F86005ED5F2 /* UIImage+FXResize.m */,
+				5007BD8318281F86005ED5F2 /* UIImage+FXRoundedCorner.h */,
+				5007BD8418281F86005ED5F2 /* UIImage+FXRoundedCorner.m */,
+				5007BD8518281F86005ED5F2 /* UIImage+NSFastEnumeration.h */,
+				5007BD8618281F86005ED5F2 /* UIImage+NSFastEnumeration.m */,
 			);
 			path = FXColorSpace;
 			sourceTree = "<group>";
@@ -286,9 +328,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5007BD8D18281F86005ED5F2 /* UIImage+FXRoundedCorner.m in Sources */,
+				5007BD8918281F86005ED5F2 /* UIImage+FXAlpha.m in Sources */,
+				5007BD8B18281F86005ED5F2 /* UIImage+FXPixelEmumeration.m in Sources */,
+				5007BD8E18281F86005ED5F2 /* UIImage+NSFastEnumeration.m in Sources */,
 				5007BD5518281633005ED5F2 /* FXAppDelegate.m in Sources */,
+				5007BD8C18281F86005ED5F2 /* UIImage+FXResize.m in Sources */,
 				5007BD5118281633005ED5F2 /* main.m in Sources */,
 				5007BD5B18281633005ED5F2 /* FXViewController.m in Sources */,
+				5007BD8718281F86005ED5F2 /* FXColorModels.m in Sources */,
+				5007BD8A18281F86005ED5F2 /* UIImage+FXImageCreation.m in Sources */,
+				5007BD8818281F86005ED5F2 /* UIColor+FXColorSpace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
