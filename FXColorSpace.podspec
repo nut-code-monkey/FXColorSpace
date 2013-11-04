@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.ios.deployment_target = '4.3'
   s.source       = { :git => "https://github.com/nut-code-monkey/FXColorSpace.git", :tag => "0.0.1" }
-  s.source_files  = 'FXColorSpace', 'FXColorSpace/FXColorSpace/**/*.{h,m}'
+  s.source_files  = 'FXColorSpace', 'FXColorSpace/FXColorSpace/FXColorSpace/**/*.{h,m}'
   s.exclude_files = 'Classes/Exclude'
   s.framework = 'CoreGraphics'
   s.requires_arc = true
