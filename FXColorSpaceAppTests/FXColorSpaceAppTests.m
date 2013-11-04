@@ -1,6 +1,6 @@
 //
-//  FXColorSpaceTests.m
-//  FXColorSpaceTests
+//  FXColorSpaceAppTests.m
+//  FXColorSpaceAppTests
 //
 //  Created by Max on 04.11.13.
 //  Copyright (c) 2013 Max Lunin. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface FXColorSpaceTests : XCTestCase
+@interface FXColorSpaceAppTests : XCTestCase
 
 @end
 
-@implementation FXColorSpaceTests
+@implementation FXColorSpaceAppTests
 
 - (void)setUp
 {

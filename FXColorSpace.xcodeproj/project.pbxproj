@@ -7,106 +7,127 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5049E7E11827F56600AEFD69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5049E7E01827F56600AEFD69 /* Foundation.framework */; };
-		5049E7E31827F56600AEFD69 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5049E7E21827F56600AEFD69 /* CoreGraphics.framework */; };
-		5049E7E51827F56600AEFD69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5049E7E41827F56600AEFD69 /* UIKit.framework */; };
-		5049E7EB1827F56700AEFD69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5049E7E91827F56700AEFD69 /* InfoPlist.strings */; };
-		5049E7ED1827F56700AEFD69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E7EC1827F56700AEFD69 /* main.m */; };
-		5049E7F11827F56700AEFD69 /* FXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E7F01827F56700AEFD69 /* FXAppDelegate.m */; };
-		5049E7F41827F56700AEFD69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5049E7F21827F56700AEFD69 /* Main.storyboard */; };
-		5049E7FC1827F56700AEFD69 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5049E7FB1827F56700AEFD69 /* Images.xcassets */; };
-		5049E8031827F56700AEFD69 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5049E8021827F56700AEFD69 /* XCTest.framework */; };
-		5049E8041827F56700AEFD69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5049E7E01827F56600AEFD69 /* Foundation.framework */; };
-		5049E8051827F56700AEFD69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5049E7E41827F56600AEFD69 /* UIKit.framework */; };
-		5049E80D1827F56700AEFD69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5049E80B1827F56700AEFD69 /* InfoPlist.strings */; };
-		5049E80F1827F56700AEFD69 /* FXColorSpaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E80E1827F56700AEFD69 /* FXColorSpaceTests.m */; };
-		5049E8291827F69200AEFD69 /* FXColorModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E81A1827F69200AEFD69 /* FXColorModels.m */; };
-		5049E82B1827F69200AEFD69 /* UIColor+FXColorSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E81E1827F69200AEFD69 /* UIColor+FXColorSpace.m */; };
-		5049E82C1827F69200AEFD69 /* UIImage+FXAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E8201827F69200AEFD69 /* UIImage+FXAlpha.m */; };
-		5049E82D1827F69200AEFD69 /* UIImage+FXImageCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E8221827F69200AEFD69 /* UIImage+FXImageCreation.m */; };
-		5049E82E1827F69200AEFD69 /* UIImage+FXPixelEmumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E8241827F69200AEFD69 /* UIImage+FXPixelEmumeration.m */; };
-		5049E82F1827F69200AEFD69 /* UIImage+FXResize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E8261827F69200AEFD69 /* UIImage+FXResize.m */; };
-		5049E8301827F69200AEFD69 /* UIImage+FXRoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E8281827F69200AEFD69 /* UIImage+FXRoundedCorner.m */; };
-		5049E8341827FB4800AEFD69 /* UIImage+NSFastEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E8331827FB4800AEFD69 /* UIImage+NSFastEnumeration.m */; };
-		5049E8371828042100AEFD69 /* FXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E8361828042100AEFD69 /* FXViewController.m */; };
+		5007BD4718281633005ED5F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5049E7E01827F56600AEFD69 /* Foundation.framework */; };
+		5007BD4818281633005ED5F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5049E7E21827F56600AEFD69 /* CoreGraphics.framework */; };
+		5007BD4918281633005ED5F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5049E7E41827F56600AEFD69 /* UIKit.framework */; };
+		5007BD4F18281633005ED5F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5007BD4D18281633005ED5F2 /* InfoPlist.strings */; };
+		5007BD5118281633005ED5F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD5018281633005ED5F2 /* main.m */; };
+		5007BD5518281633005ED5F2 /* FXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD5418281633005ED5F2 /* FXAppDelegate.m */; };
+		5007BD5818281633005ED5F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5007BD5618281633005ED5F2 /* Main.storyboard */; };
+		5007BD5B18281633005ED5F2 /* FXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD5A18281633005ED5F2 /* FXViewController.m */; };
+		5007BD5D18281633005ED5F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5007BD5C18281633005ED5F2 /* Images.xcassets */; };
+		5007BD6318281633005ED5F2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5049E8021827F56700AEFD69 /* XCTest.framework */; };
+		5007BD6418281633005ED5F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5049E7E01827F56600AEFD69 /* Foundation.framework */; };
+		5007BD6518281633005ED5F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5049E7E41827F56600AEFD69 /* UIKit.framework */; };
+		5007BD6D18281633005ED5F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5007BD6B18281633005ED5F2 /* InfoPlist.strings */; };
+		5007BD6F18281633005ED5F2 /* FXColorSpaceAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD6E18281633005ED5F2 /* FXColorSpaceAppTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5049E8061827F56700AEFD69 /* PBXContainerItemProxy */ = {
+		5007BD6618281633005ED5F2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5049E7D51827F56600AEFD69 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5049E7DC1827F56600AEFD69;
-			remoteInfo = FXColorSpace;
+			remoteGlobalIDString = 5007BD4518281633005ED5F2;
+			remoteInfo = FXColorSpaceApp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5049E7DD1827F56600AEFD69 /* FXColorSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FXColorSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5007BD4618281633005ED5F2 /* FXColorSpaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FXColorSpaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5007BD4C18281633005ED5F2 /* FXColorSpaceApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FXColorSpaceApp-Info.plist"; sourceTree = "<group>"; };
+		5007BD4E18281633005ED5F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5007BD5018281633005ED5F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5007BD5218281633005ED5F2 /* FXColorSpaceApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FXColorSpaceApp-Prefix.pch"; sourceTree = "<group>"; };
+		5007BD5318281633005ED5F2 /* FXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXAppDelegate.h; sourceTree = "<group>"; };
+		5007BD5418281633005ED5F2 /* FXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXAppDelegate.m; sourceTree = "<group>"; };
+		5007BD5718281633005ED5F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5007BD5918281633005ED5F2 /* FXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXViewController.h; sourceTree = "<group>"; };
+		5007BD5A18281633005ED5F2 /* FXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXViewController.m; sourceTree = "<group>"; };
+		5007BD5C18281633005ED5F2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5007BD6218281633005ED5F2 /* FXColorSpaceAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FXColorSpaceAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5007BD6A18281633005ED5F2 /* FXColorSpaceAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FXColorSpaceAppTests-Info.plist"; sourceTree = "<group>"; };
+		5007BD6C18281633005ED5F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5007BD6E18281633005ED5F2 /* FXColorSpaceAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXColorSpaceAppTests.m; sourceTree = "<group>"; };
 		5049E7E01827F56600AEFD69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5049E7E21827F56600AEFD69 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5049E7E41827F56600AEFD69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		5049E7E81827F56600AEFD69 /* FXColorSpace-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FXColorSpace-Info.plist"; sourceTree = "<group>"; };
-		5049E7EA1827F56700AEFD69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5049E7EC1827F56700AEFD69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5049E7EE1827F56700AEFD69 /* FXColorSpace-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FXColorSpace-Prefix.pch"; sourceTree = "<group>"; };
-		5049E7EF1827F56700AEFD69 /* FXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXAppDelegate.h; sourceTree = "<group>"; };
-		5049E7F01827F56700AEFD69 /* FXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXAppDelegate.m; sourceTree = "<group>"; };
-		5049E7F31827F56700AEFD69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5049E7FB1827F56700AEFD69 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5049E8011827F56700AEFD69 /* FXColorSpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FXColorSpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5049E8021827F56700AEFD69 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5049E80A1827F56700AEFD69 /* FXColorSpaceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FXColorSpaceTests-Info.plist"; sourceTree = "<group>"; };
 		5049E80C1827F56700AEFD69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5049E80E1827F56700AEFD69 /* FXColorSpaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXColorSpaceTests.m; sourceTree = "<group>"; };
-		5049E8191827F69200AEFD69 /* FXColorModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXColorModels.h; sourceTree = "<group>"; };
-		5049E81A1827F69200AEFD69 /* FXColorModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXColorModels.m; sourceTree = "<group>"; };
-		5049E81B1827F69200AEFD69 /* FXColorSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXColorSpace.h; sourceTree = "<group>"; };
-		5049E81D1827F69200AEFD69 /* UIColor+FXColorSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FXColorSpace.h"; sourceTree = "<group>"; };
-		5049E81E1827F69200AEFD69 /* UIColor+FXColorSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FXColorSpace.m"; sourceTree = "<group>"; };
-		5049E81F1827F69200AEFD69 /* UIImage+FXAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FXAlpha.h"; sourceTree = "<group>"; };
-		5049E8201827F69200AEFD69 /* UIImage+FXAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FXAlpha.m"; sourceTree = "<group>"; };
-		5049E8211827F69200AEFD69 /* UIImage+FXImageCreation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FXImageCreation.h"; sourceTree = "<group>"; };
-		5049E8221827F69200AEFD69 /* UIImage+FXImageCreation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FXImageCreation.m"; sourceTree = "<group>"; };
-		5049E8231827F69200AEFD69 /* UIImage+FXPixelEmumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FXPixelEmumeration.h"; sourceTree = "<group>"; };
-		5049E8241827F69200AEFD69 /* UIImage+FXPixelEmumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FXPixelEmumeration.m"; sourceTree = "<group>"; };
-		5049E8251827F69200AEFD69 /* UIImage+FXResize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FXResize.h"; sourceTree = "<group>"; };
-		5049E8261827F69200AEFD69 /* UIImage+FXResize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FXResize.m"; sourceTree = "<group>"; };
-		5049E8271827F69200AEFD69 /* UIImage+FXRoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FXRoundedCorner.h"; sourceTree = "<group>"; };
-		5049E8281827F69200AEFD69 /* UIImage+FXRoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FXRoundedCorner.m"; sourceTree = "<group>"; };
 		5049E8311827F7BA00AEFD69 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		5049E8321827FB4800AEFD69 /* UIImage+NSFastEnumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NSFastEnumeration.h"; sourceTree = "<group>"; };
-		5049E8331827FB4800AEFD69 /* UIImage+NSFastEnumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NSFastEnumeration.m"; sourceTree = "<group>"; };
-		5049E8351828042100AEFD69 /* FXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXViewController.h; sourceTree = "<group>"; };
-		5049E8361828042100AEFD69 /* FXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXViewController.m; sourceTree = "<group>"; };
 		5049E8391828112F00AEFD69 /* FXColorSpace.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = FXColorSpace.podspec; sourceTree = "<group>"; };
 		5049E83A1828112F00AEFD69 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5049E7DA1827F56600AEFD69 /* Frameworks */ = {
+		5007BD4318281633005ED5F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5049E7E31827F56600AEFD69 /* CoreGraphics.framework in Frameworks */,
-				5049E7E51827F56600AEFD69 /* UIKit.framework in Frameworks */,
-				5049E7E11827F56600AEFD69 /* Foundation.framework in Frameworks */,
+				5007BD4818281633005ED5F2 /* CoreGraphics.framework in Frameworks */,
+				5007BD4918281633005ED5F2 /* UIKit.framework in Frameworks */,
+				5007BD4718281633005ED5F2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5049E7FE1827F56700AEFD69 /* Frameworks */ = {
+		5007BD5F18281633005ED5F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5049E8031827F56700AEFD69 /* XCTest.framework in Frameworks */,
-				5049E8051827F56700AEFD69 /* UIKit.framework in Frameworks */,
-				5049E8041827F56700AEFD69 /* Foundation.framework in Frameworks */,
+				5007BD6318281633005ED5F2 /* XCTest.framework in Frameworks */,
+				5007BD6518281633005ED5F2 /* UIKit.framework in Frameworks */,
+				5007BD6418281633005ED5F2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5007BD4A18281633005ED5F2 /* FXColorSpaceApp */ = {
+			isa = PBXGroup;
+			children = (
+				5007BD5318281633005ED5F2 /* FXAppDelegate.h */,
+				5007BD5418281633005ED5F2 /* FXAppDelegate.m */,
+				5007BD5618281633005ED5F2 /* Main.storyboard */,
+				5007BD5918281633005ED5F2 /* FXViewController.h */,
+				5007BD5A18281633005ED5F2 /* FXViewController.m */,
+				5007BD5C18281633005ED5F2 /* Images.xcassets */,
+				5007BD4B18281633005ED5F2 /* Supporting Files */,
+			);
+			path = FXColorSpaceApp;
+			sourceTree = "<group>";
+		};
+		5007BD4B18281633005ED5F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5007BD4C18281633005ED5F2 /* FXColorSpaceApp-Info.plist */,
+				5007BD4D18281633005ED5F2 /* InfoPlist.strings */,
+				5007BD5018281633005ED5F2 /* main.m */,
+				5007BD5218281633005ED5F2 /* FXColorSpaceApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5007BD6818281633005ED5F2 /* FXColorSpaceAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5007BD6E18281633005ED5F2 /* FXColorSpaceAppTests.m */,
+				5007BD6918281633005ED5F2 /* Supporting Files */,
+			);
+			path = FXColorSpaceAppTests;
+			sourceTree = "<group>";
+		};
+		5007BD6918281633005ED5F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5007BD6A18281633005ED5F2 /* FXColorSpaceAppTests-Info.plist */,
+				5007BD6B18281633005ED5F2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		5049E7D41827F56600AEFD69 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +136,8 @@
 				5049E8311827F7BA00AEFD69 /* README.md */,
 				5049E7E61827F56600AEFD69 /* FXColorSpace */,
 				5049E8081827F56700AEFD69 /* FXColorSpaceTests */,
+				5007BD4A18281633005ED5F2 /* FXColorSpaceApp */,
+				5007BD6818281633005ED5F2 /* FXColorSpaceAppTests */,
 				5049E7DF1827F56600AEFD69 /* Frameworks */,
 				5049E7DE1827F56600AEFD69 /* Products */,
 			);
@@ -123,8 +146,8 @@
 		5049E7DE1827F56600AEFD69 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5049E7DD1827F56600AEFD69 /* FXColorSpace.app */,
-				5049E8011827F56700AEFD69 /* FXColorSpaceTests.xctest */,
+				5007BD4618281633005ED5F2 /* FXColorSpaceApp.app */,
+				5007BD6218281633005ED5F2 /* FXColorSpaceAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,27 +166,8 @@
 		5049E7E61827F56600AEFD69 /* FXColorSpace */ = {
 			isa = PBXGroup;
 			children = (
-				5049E8181827F69200AEFD69 /* FXColorSpace */,
-				5049E7EF1827F56700AEFD69 /* FXAppDelegate.h */,
-				5049E7F01827F56700AEFD69 /* FXAppDelegate.m */,
-				5049E7F21827F56700AEFD69 /* Main.storyboard */,
-				5049E7FB1827F56700AEFD69 /* Images.xcassets */,
-				5049E7E71827F56600AEFD69 /* Supporting Files */,
-				5049E8351828042100AEFD69 /* FXViewController.h */,
-				5049E8361828042100AEFD69 /* FXViewController.m */,
 			);
 			path = FXColorSpace;
-			sourceTree = "<group>";
-		};
-		5049E7E71827F56600AEFD69 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5049E7E81827F56600AEFD69 /* FXColorSpace-Info.plist */,
-				5049E7E91827F56700AEFD69 /* InfoPlist.strings */,
-				5049E7EC1827F56700AEFD69 /* main.m */,
-				5049E7EE1827F56700AEFD69 /* FXColorSpace-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		5049E8081827F56700AEFD69 /* FXColorSpaceTests */ = {
@@ -184,66 +188,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5049E8181827F69200AEFD69 /* FXColorSpace */ = {
-			isa = PBXGroup;
-			children = (
-				5049E8191827F69200AEFD69 /* FXColorModels.h */,
-				5049E81A1827F69200AEFD69 /* FXColorModels.m */,
-				5049E81B1827F69200AEFD69 /* FXColorSpace.h */,
-				5049E81D1827F69200AEFD69 /* UIColor+FXColorSpace.h */,
-				5049E81E1827F69200AEFD69 /* UIColor+FXColorSpace.m */,
-				5049E81F1827F69200AEFD69 /* UIImage+FXAlpha.h */,
-				5049E8201827F69200AEFD69 /* UIImage+FXAlpha.m */,
-				5049E8211827F69200AEFD69 /* UIImage+FXImageCreation.h */,
-				5049E8221827F69200AEFD69 /* UIImage+FXImageCreation.m */,
-				5049E8231827F69200AEFD69 /* UIImage+FXPixelEmumeration.h */,
-				5049E8241827F69200AEFD69 /* UIImage+FXPixelEmumeration.m */,
-				5049E8251827F69200AEFD69 /* UIImage+FXResize.h */,
-				5049E8261827F69200AEFD69 /* UIImage+FXResize.m */,
-				5049E8271827F69200AEFD69 /* UIImage+FXRoundedCorner.h */,
-				5049E8281827F69200AEFD69 /* UIImage+FXRoundedCorner.m */,
-				5049E8321827FB4800AEFD69 /* UIImage+NSFastEnumeration.h */,
-				5049E8331827FB4800AEFD69 /* UIImage+NSFastEnumeration.m */,
-			);
-			path = FXColorSpace;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5049E7DC1827F56600AEFD69 /* FXColorSpace */ = {
+		5007BD4518281633005ED5F2 /* FXColorSpaceApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5049E8121827F56700AEFD69 /* Build configuration list for PBXNativeTarget "FXColorSpace" */;
+			buildConfigurationList = 5007BD7018281633005ED5F2 /* Build configuration list for PBXNativeTarget "FXColorSpaceApp" */;
 			buildPhases = (
-				5049E7D91827F56600AEFD69 /* Sources */,
-				5049E7DA1827F56600AEFD69 /* Frameworks */,
-				5049E7DB1827F56600AEFD69 /* Resources */,
+				5007BD4218281633005ED5F2 /* Sources */,
+				5007BD4318281633005ED5F2 /* Frameworks */,
+				5007BD4418281633005ED5F2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FXColorSpace;
-			productName = FXColorSpace;
-			productReference = 5049E7DD1827F56600AEFD69 /* FXColorSpace.app */;
+			name = FXColorSpaceApp;
+			productName = FXColorSpaceApp;
+			productReference = 5007BD4618281633005ED5F2 /* FXColorSpaceApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5049E8001827F56700AEFD69 /* FXColorSpaceTests */ = {
+		5007BD6118281633005ED5F2 /* FXColorSpaceAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5049E8151827F56700AEFD69 /* Build configuration list for PBXNativeTarget "FXColorSpaceTests" */;
+			buildConfigurationList = 5007BD7318281633005ED5F2 /* Build configuration list for PBXNativeTarget "FXColorSpaceAppTests" */;
 			buildPhases = (
-				5049E7FD1827F56700AEFD69 /* Sources */,
-				5049E7FE1827F56700AEFD69 /* Frameworks */,
-				5049E7FF1827F56700AEFD69 /* Resources */,
+				5007BD5E18281633005ED5F2 /* Sources */,
+				5007BD5F18281633005ED5F2 /* Frameworks */,
+				5007BD6018281633005ED5F2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5049E8071827F56700AEFD69 /* PBXTargetDependency */,
+				5007BD6718281633005ED5F2 /* PBXTargetDependency */,
 			);
-			name = FXColorSpaceTests;
-			productName = FXColorSpaceTests;
-			productReference = 5049E8011827F56700AEFD69 /* FXColorSpaceTests.xctest */;
+			name = FXColorSpaceAppTests;
+			productName = FXColorSpaceAppTests;
+			productReference = 5007BD6218281633005ED5F2 /* FXColorSpaceAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -256,8 +236,8 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Max Lunin";
 				TargetAttributes = {
-					5049E8001827F56700AEFD69 = {
-						TestTargetID = 5049E7DC1827F56600AEFD69;
+					5007BD6118281633005ED5F2 = {
+						TestTargetID = 5007BD4518281633005ED5F2;
 					};
 				};
 			};
@@ -274,85 +254,85 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5049E7DC1827F56600AEFD69 /* FXColorSpace */,
-				5049E8001827F56700AEFD69 /* FXColorSpaceTests */,
+				5007BD4518281633005ED5F2 /* FXColorSpaceApp */,
+				5007BD6118281633005ED5F2 /* FXColorSpaceAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5049E7DB1827F56600AEFD69 /* Resources */ = {
+		5007BD4418281633005ED5F2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5049E7FC1827F56700AEFD69 /* Images.xcassets in Resources */,
-				5049E7EB1827F56700AEFD69 /* InfoPlist.strings in Resources */,
-				5049E7F41827F56700AEFD69 /* Main.storyboard in Resources */,
+				5007BD5D18281633005ED5F2 /* Images.xcassets in Resources */,
+				5007BD4F18281633005ED5F2 /* InfoPlist.strings in Resources */,
+				5007BD5818281633005ED5F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5049E7FF1827F56700AEFD69 /* Resources */ = {
+		5007BD6018281633005ED5F2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5049E80D1827F56700AEFD69 /* InfoPlist.strings in Resources */,
+				5007BD6D18281633005ED5F2 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5049E7D91827F56600AEFD69 /* Sources */ = {
+		5007BD4218281633005ED5F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5049E8291827F69200AEFD69 /* FXColorModels.m in Sources */,
-				5049E8301827F69200AEFD69 /* UIImage+FXRoundedCorner.m in Sources */,
-				5049E7F11827F56700AEFD69 /* FXAppDelegate.m in Sources */,
-				5049E8371828042100AEFD69 /* FXViewController.m in Sources */,
-				5049E82B1827F69200AEFD69 /* UIColor+FXColorSpace.m in Sources */,
-				5049E8341827FB4800AEFD69 /* UIImage+NSFastEnumeration.m in Sources */,
-				5049E7ED1827F56700AEFD69 /* main.m in Sources */,
-				5049E82F1827F69200AEFD69 /* UIImage+FXResize.m in Sources */,
-				5049E82E1827F69200AEFD69 /* UIImage+FXPixelEmumeration.m in Sources */,
-				5049E82C1827F69200AEFD69 /* UIImage+FXAlpha.m in Sources */,
-				5049E82D1827F69200AEFD69 /* UIImage+FXImageCreation.m in Sources */,
+				5007BD5518281633005ED5F2 /* FXAppDelegate.m in Sources */,
+				5007BD5118281633005ED5F2 /* main.m in Sources */,
+				5007BD5B18281633005ED5F2 /* FXViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5049E7FD1827F56700AEFD69 /* Sources */ = {
+		5007BD5E18281633005ED5F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5049E80F1827F56700AEFD69 /* FXColorSpaceTests.m in Sources */,
+				5007BD6F18281633005ED5F2 /* FXColorSpaceAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5049E8071827F56700AEFD69 /* PBXTargetDependency */ = {
+		5007BD6718281633005ED5F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5049E7DC1827F56600AEFD69 /* FXColorSpace */;
-			targetProxy = 5049E8061827F56700AEFD69 /* PBXContainerItemProxy */;
+			target = 5007BD4518281633005ED5F2 /* FXColorSpaceApp */;
+			targetProxy = 5007BD6618281633005ED5F2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5049E7E91827F56700AEFD69 /* InfoPlist.strings */ = {
+		5007BD4D18281633005ED5F2 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5049E7EA1827F56700AEFD69 /* en */,
+				5007BD4E18281633005ED5F2 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		5049E7F21827F56700AEFD69 /* Main.storyboard */ = {
+		5007BD5618281633005ED5F2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5049E7F31827F56700AEFD69 /* Base */,
+				5007BD5718281633005ED5F2 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5007BD6B18281633005ED5F2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5007BD6C18281633005ED5F2 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		5049E80B1827F56700AEFD69 /* InfoPlist.strings */ = {
@@ -366,6 +346,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5007BD7118281633005ED5F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FXColorSpaceApp/FXColorSpaceApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FXColorSpaceApp/FXColorSpaceApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5007BD7218281633005ED5F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FXColorSpaceApp/FXColorSpaceApp-Prefix.pch";
+				INFOPLIST_FILE = "FXColorSpaceApp/FXColorSpaceApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5007BD7418281633005ED5F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FXColorSpaceApp.app/FXColorSpaceApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FXColorSpaceApp/FXColorSpaceApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FXColorSpaceAppTests/FXColorSpaceAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5007BD7518281633005ED5F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FXColorSpaceApp.app/FXColorSpaceApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FXColorSpaceApp/FXColorSpaceApp-Prefix.pch";
+				INFOPLIST_FILE = "FXColorSpaceAppTests/FXColorSpaceAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		5049E8101827F56700AEFD69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -438,77 +492,25 @@
 			};
 			name = Release;
 		};
-		5049E8131827F56700AEFD69 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FXColorSpace/FXColorSpace-Prefix.pch";
-				INFOPLIST_FILE = "FXColorSpace/FXColorSpace-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		5049E8141827F56700AEFD69 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FXColorSpace/FXColorSpace-Prefix.pch";
-				INFOPLIST_FILE = "FXColorSpace/FXColorSpace-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		5049E8161827F56700AEFD69 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FXColorSpace.app/FXColorSpace";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FXColorSpace/FXColorSpace-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "FXColorSpaceTests/FXColorSpaceTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		5049E8171827F56700AEFD69 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FXColorSpace.app/FXColorSpace";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FXColorSpace/FXColorSpace-Prefix.pch";
-				INFOPLIST_FILE = "FXColorSpaceTests/FXColorSpaceTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5007BD7018281633005ED5F2 /* Build configuration list for PBXNativeTarget "FXColorSpaceApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5007BD7118281633005ED5F2 /* Debug */,
+				5007BD7218281633005ED5F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5007BD7318281633005ED5F2 /* Build configuration list for PBXNativeTarget "FXColorSpaceAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5007BD7418281633005ED5F2 /* Debug */,
+				5007BD7518281633005ED5F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5049E7D81827F56600AEFD69 /* Build configuration list for PBXProject "FXColorSpace" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -517,22 +519,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		5049E8121827F56700AEFD69 /* Build configuration list for PBXNativeTarget "FXColorSpace" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5049E8131827F56700AEFD69 /* Debug */,
-				5049E8141827F56700AEFD69 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		5049E8151827F56700AEFD69 /* Build configuration list for PBXNativeTarget "FXColorSpaceTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5049E8161827F56700AEFD69 /* Debug */,
-				5049E8171827F56700AEFD69 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
