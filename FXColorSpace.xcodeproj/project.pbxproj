@@ -62,7 +62,6 @@
 		5049E8191827F69200AEFD69 /* FXColorModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXColorModels.h; sourceTree = "<group>"; };
 		5049E81A1827F69200AEFD69 /* FXColorModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXColorModels.m; sourceTree = "<group>"; };
 		5049E81B1827F69200AEFD69 /* FXColorSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXColorSpace.h; sourceTree = "<group>"; };
-		5049E81C1827F69200AEFD69 /* FXColorSpace.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = FXColorSpace.podspec; path = FXColorSpace/FXColorSpace/FXColorSpace.podspec; sourceTree = "<group>"; };
 		5049E81D1827F69200AEFD69 /* UIColor+FXColorSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FXColorSpace.h"; sourceTree = "<group>"; };
 		5049E81E1827F69200AEFD69 /* UIColor+FXColorSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FXColorSpace.m"; sourceTree = "<group>"; };
 		5049E81F1827F69200AEFD69 /* UIImage+FXAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FXAlpha.h"; sourceTree = "<group>"; };
@@ -80,6 +79,8 @@
 		5049E8331827FB4800AEFD69 /* UIImage+NSFastEnumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NSFastEnumeration.m"; sourceTree = "<group>"; };
 		5049E8351828042100AEFD69 /* FXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXViewController.h; sourceTree = "<group>"; };
 		5049E8361828042100AEFD69 /* FXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXViewController.m; sourceTree = "<group>"; };
+		5049E8391828112F00AEFD69 /* FXColorSpace.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = FXColorSpace.podspec; sourceTree = "<group>"; };
+		5049E83A1828112F00AEFD69 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +110,9 @@
 		5049E7D41827F56600AEFD69 = {
 			isa = PBXGroup;
 			children = (
+				5049E8391828112F00AEFD69 /* FXColorSpace.podspec */,
+				5049E83A1828112F00AEFD69 /* LICENSE */,
 				5049E8311827F7BA00AEFD69 /* README.md */,
-				5049E81C1827F69200AEFD69 /* FXColorSpace.podspec */,
 				5049E7E61827F56600AEFD69 /* FXColorSpace */,
 				5049E8081827F56700AEFD69 /* FXColorSpaceTests */,
 				5049E7DF1827F56600AEFD69 /* Frameworks */,
