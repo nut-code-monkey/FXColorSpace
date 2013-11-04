@@ -80,6 +80,7 @@
 		5049E8331827FB4800AEFD69 /* UIImage+NSFastEnumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NSFastEnumeration.m"; sourceTree = "<group>"; };
 		5049E8351828042100AEFD69 /* FXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXViewController.h; sourceTree = "<group>"; };
 		5049E8361828042100AEFD69 /* FXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXViewController.m; sourceTree = "<group>"; };
+		5049E838182810AA00AEFD69 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = FXColorSpace/FXColorSpace/LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +110,7 @@
 		5049E7D41827F56600AEFD69 = {
 			isa = PBXGroup;
 			children = (
+				5049E838182810AA00AEFD69 /* LICENSE */,
 				5049E8311827F7BA00AEFD69 /* README.md */,
 				5049E81C1827F69200AEFD69 /* FXColorSpace.podspec */,
 				5049E7E61827F56600AEFD69 /* FXColorSpace */,
