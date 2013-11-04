@@ -14,8 +14,6 @@
 		5049E7ED1827F56700AEFD69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E7EC1827F56700AEFD69 /* main.m */; };
 		5049E7F11827F56700AEFD69 /* FXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E7F01827F56700AEFD69 /* FXAppDelegate.m */; };
 		5049E7F41827F56700AEFD69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5049E7F21827F56700AEFD69 /* Main.storyboard */; };
-		5049E7F71827F56700AEFD69 /* FXMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E7F61827F56700AEFD69 /* FXMasterViewController.m */; };
-		5049E7FA1827F56700AEFD69 /* FXDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E7F91827F56700AEFD69 /* FXDetailViewController.m */; };
 		5049E7FC1827F56700AEFD69 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5049E7FB1827F56700AEFD69 /* Images.xcassets */; };
 		5049E8031827F56700AEFD69 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5049E8021827F56700AEFD69 /* XCTest.framework */; };
 		5049E8041827F56700AEFD69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5049E7E01827F56600AEFD69 /* Foundation.framework */; };
@@ -29,6 +27,8 @@
 		5049E82E1827F69200AEFD69 /* UIImage+FXPixelEmumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E8241827F69200AEFD69 /* UIImage+FXPixelEmumeration.m */; };
 		5049E82F1827F69200AEFD69 /* UIImage+FXResize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E8261827F69200AEFD69 /* UIImage+FXResize.m */; };
 		5049E8301827F69200AEFD69 /* UIImage+FXRoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E8281827F69200AEFD69 /* UIImage+FXRoundedCorner.m */; };
+		5049E8341827FB4800AEFD69 /* UIImage+NSFastEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E8331827FB4800AEFD69 /* UIImage+NSFastEnumeration.m */; };
+		5049E8371828042100AEFD69 /* FXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5049E8361828042100AEFD69 /* FXViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +53,6 @@
 		5049E7EF1827F56700AEFD69 /* FXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXAppDelegate.h; sourceTree = "<group>"; };
 		5049E7F01827F56700AEFD69 /* FXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXAppDelegate.m; sourceTree = "<group>"; };
 		5049E7F31827F56700AEFD69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5049E7F51827F56700AEFD69 /* FXMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXMasterViewController.h; sourceTree = "<group>"; };
-		5049E7F61827F56700AEFD69 /* FXMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXMasterViewController.m; sourceTree = "<group>"; };
-		5049E7F81827F56700AEFD69 /* FXDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXDetailViewController.h; sourceTree = "<group>"; };
-		5049E7F91827F56700AEFD69 /* FXDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXDetailViewController.m; sourceTree = "<group>"; };
 		5049E7FB1827F56700AEFD69 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5049E8011827F56700AEFD69 /* FXColorSpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FXColorSpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5049E8021827F56700AEFD69 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -80,6 +76,10 @@
 		5049E8271827F69200AEFD69 /* UIImage+FXRoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FXRoundedCorner.h"; sourceTree = "<group>"; };
 		5049E8281827F69200AEFD69 /* UIImage+FXRoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FXRoundedCorner.m"; sourceTree = "<group>"; };
 		5049E8311827F7BA00AEFD69 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		5049E8321827FB4800AEFD69 /* UIImage+NSFastEnumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NSFastEnumeration.h"; sourceTree = "<group>"; };
+		5049E8331827FB4800AEFD69 /* UIImage+NSFastEnumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NSFastEnumeration.m"; sourceTree = "<group>"; };
+		5049E8351828042100AEFD69 /* FXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXViewController.h; sourceTree = "<group>"; };
+		5049E8361828042100AEFD69 /* FXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,12 +145,10 @@
 				5049E7EF1827F56700AEFD69 /* FXAppDelegate.h */,
 				5049E7F01827F56700AEFD69 /* FXAppDelegate.m */,
 				5049E7F21827F56700AEFD69 /* Main.storyboard */,
-				5049E7F51827F56700AEFD69 /* FXMasterViewController.h */,
-				5049E7F61827F56700AEFD69 /* FXMasterViewController.m */,
-				5049E7F81827F56700AEFD69 /* FXDetailViewController.h */,
-				5049E7F91827F56700AEFD69 /* FXDetailViewController.m */,
 				5049E7FB1827F56700AEFD69 /* Images.xcassets */,
 				5049E7E71827F56600AEFD69 /* Supporting Files */,
+				5049E8351828042100AEFD69 /* FXViewController.h */,
+				5049E8361828042100AEFD69 /* FXViewController.m */,
 			);
 			path = FXColorSpace;
 			sourceTree = "<group>";
@@ -202,6 +200,8 @@
 				5049E8261827F69200AEFD69 /* UIImage+FXResize.m */,
 				5049E8271827F69200AEFD69 /* UIImage+FXRoundedCorner.h */,
 				5049E8281827F69200AEFD69 /* UIImage+FXRoundedCorner.m */,
+				5049E8321827FB4800AEFD69 /* UIImage+NSFastEnumeration.h */,
+				5049E8331827FB4800AEFD69 /* UIImage+NSFastEnumeration.m */,
 			);
 			path = FXColorSpace;
 			sourceTree = "<group>";
@@ -307,14 +307,14 @@
 				5049E8291827F69200AEFD69 /* FXColorModels.m in Sources */,
 				5049E8301827F69200AEFD69 /* UIImage+FXRoundedCorner.m in Sources */,
 				5049E7F11827F56700AEFD69 /* FXAppDelegate.m in Sources */,
+				5049E8371828042100AEFD69 /* FXViewController.m in Sources */,
 				5049E82B1827F69200AEFD69 /* UIColor+FXColorSpace.m in Sources */,
+				5049E8341827FB4800AEFD69 /* UIImage+NSFastEnumeration.m in Sources */,
 				5049E7ED1827F56700AEFD69 /* main.m in Sources */,
-				5049E7F71827F56700AEFD69 /* FXMasterViewController.m in Sources */,
 				5049E82F1827F69200AEFD69 /* UIImage+FXResize.m in Sources */,
 				5049E82E1827F69200AEFD69 /* UIImage+FXPixelEmumeration.m in Sources */,
 				5049E82C1827F69200AEFD69 /* UIImage+FXAlpha.m in Sources */,
 				5049E82D1827F69200AEFD69 /* UIImage+FXImageCreation.m in Sources */,
-				5049E7FA1827F56700AEFD69 /* FXDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

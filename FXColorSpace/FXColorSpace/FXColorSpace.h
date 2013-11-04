@@ -13,3 +13,4 @@
 #import "UIImage+FXRoundedCorner.h"
 #import "UIImage+FXPixelEmumeration.h"
 #import "UIImage+FXImageCreation.h"
+#import "UIImage+NSFastEnumeration.h"

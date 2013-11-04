@@ -85,7 +85,6 @@ size_t FX_map(size_t x, size_t in_min, size_t in_max, size_t out_min, size_t out
             {
                 pixelBuffer[i+chanel] = rgba.components[chanel];
             }
-            pixelBuffer[i+3] = 0;
         }
     }
     

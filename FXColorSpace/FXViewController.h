@@ -1,5 +1,5 @@
 //
-//  FXMasterViewController.h
+//  FXViewController.h
 //  FXColorSpace
 //
 //  Created by Max on 04.11.13.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FXMasterViewController : UITableViewController
+@interface FXViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
