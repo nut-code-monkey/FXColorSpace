@@ -16,11 +16,6 @@
 		5007BD5818281633005ED5F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5007BD5618281633005ED5F2 /* Main.storyboard */; };
 		5007BD5B18281633005ED5F2 /* FXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD5A18281633005ED5F2 /* FXViewController.m */; };
 		5007BD5D18281633005ED5F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5007BD5C18281633005ED5F2 /* Images.xcassets */; };
-		5007BD6318281633005ED5F2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5049E8021827F56700AEFD69 /* XCTest.framework */; };
-		5007BD6418281633005ED5F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5049E7E01827F56600AEFD69 /* Foundation.framework */; };
-		5007BD6518281633005ED5F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5049E7E41827F56600AEFD69 /* UIKit.framework */; };
-		5007BD6D18281633005ED5F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5007BD6B18281633005ED5F2 /* InfoPlist.strings */; };
-		5007BD6F18281633005ED5F2 /* FXColorSpaceAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD6E18281633005ED5F2 /* FXColorSpaceAppTests.m */; };
 		5007BD8718281F86005ED5F2 /* FXColorModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD7718281F86005ED5F2 /* FXColorModels.m */; };
 		5007BD8818281F86005ED5F2 /* UIColor+FXColorSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD7A18281F86005ED5F2 /* UIColor+FXColorSpace.m */; };
 		5007BD8918281F86005ED5F2 /* UIImage+FXAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD7C18281F86005ED5F2 /* UIImage+FXAlpha.m */; };
@@ -30,16 +25,6 @@
 		5007BD8D18281F86005ED5F2 /* UIImage+FXRoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD8418281F86005ED5F2 /* UIImage+FXRoundedCorner.m */; };
 		5007BD8E18281F86005ED5F2 /* UIImage+NSFastEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD8618281F86005ED5F2 /* UIImage+NSFastEnumeration.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5007BD6618281633005ED5F2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5049E7D51827F56600AEFD69 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5007BD4518281633005ED5F2;
-			remoteInfo = FXColorSpaceApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5007BD4618281633005ED5F2 /* FXColorSpaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FXColorSpaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,10 +38,6 @@
 		5007BD5918281633005ED5F2 /* FXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXViewController.h; sourceTree = "<group>"; };
 		5007BD5A18281633005ED5F2 /* FXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXViewController.m; sourceTree = "<group>"; };
 		5007BD5C18281633005ED5F2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5007BD6218281633005ED5F2 /* FXColorSpaceAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FXColorSpaceAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5007BD6A18281633005ED5F2 /* FXColorSpaceAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FXColorSpaceAppTests-Info.plist"; sourceTree = "<group>"; };
-		5007BD6C18281633005ED5F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5007BD6E18281633005ED5F2 /* FXColorSpaceAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXColorSpaceAppTests.m; sourceTree = "<group>"; };
 		5007BD7618281F86005ED5F2 /* FXColorModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXColorModels.h; sourceTree = "<group>"; };
 		5007BD7718281F86005ED5F2 /* FXColorModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXColorModels.m; sourceTree = "<group>"; };
 		5007BD7818281F86005ED5F2 /* FXColorSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXColorSpace.h; sourceTree = "<group>"; };
@@ -78,9 +59,6 @@
 		5049E7E21827F56600AEFD69 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5049E7E41827F56600AEFD69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5049E8021827F56700AEFD69 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		5049E80A1827F56700AEFD69 /* FXColorSpaceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FXColorSpaceTests-Info.plist"; sourceTree = "<group>"; };
-		5049E80C1827F56700AEFD69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5049E80E1827F56700AEFD69 /* FXColorSpaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXColorSpaceTests.m; sourceTree = "<group>"; };
 		5049E8311827F7BA00AEFD69 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		5049E8391828112F00AEFD69 /* FXColorSpace.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = FXColorSpace.podspec; sourceTree = "<group>"; };
 		5049E83A1828112F00AEFD69 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -94,16 +72,6 @@
 				5007BD4818281633005ED5F2 /* CoreGraphics.framework in Frameworks */,
 				5007BD4918281633005ED5F2 /* UIKit.framework in Frameworks */,
 				5007BD4718281633005ED5F2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5007BD5F18281633005ED5F2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5007BD6318281633005ED5F2 /* XCTest.framework in Frameworks */,
-				5007BD6518281633005ED5F2 /* UIKit.framework in Frameworks */,
-				5007BD6418281633005ED5F2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,24 +103,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5007BD6818281633005ED5F2 /* FXColorSpaceAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				5007BD6E18281633005ED5F2 /* FXColorSpaceAppTests.m */,
-				5007BD6918281633005ED5F2 /* Supporting Files */,
-			);
-			path = FXColorSpaceAppTests;
-			sourceTree = "<group>";
-		};
-		5007BD6918281633005ED5F2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5007BD6A18281633005ED5F2 /* FXColorSpaceAppTests-Info.plist */,
-				5007BD6B18281633005ED5F2 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		5049E7D41827F56600AEFD69 = {
 			isa = PBXGroup;
 			children = (
@@ -160,9 +110,7 @@
 				5049E83A1828112F00AEFD69 /* LICENSE */,
 				5049E8311827F7BA00AEFD69 /* README.md */,
 				5049E7E61827F56600AEFD69 /* FXColorSpace */,
-				5049E8081827F56700AEFD69 /* FXColorSpaceTests */,
 				5007BD4A18281633005ED5F2 /* FXColorSpaceApp */,
-				5007BD6818281633005ED5F2 /* FXColorSpaceAppTests */,
 				5049E7DF1827F56600AEFD69 /* Frameworks */,
 				5049E7DE1827F56600AEFD69 /* Products */,
 			);
@@ -172,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				5007BD4618281633005ED5F2 /* FXColorSpaceApp.app */,
-				5007BD6218281633005ED5F2 /* FXColorSpaceAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -212,24 +159,6 @@
 			path = FXColorSpace;
 			sourceTree = "<group>";
 		};
-		5049E8081827F56700AEFD69 /* FXColorSpaceTests */ = {
-			isa = PBXGroup;
-			children = (
-				5049E80E1827F56700AEFD69 /* FXColorSpaceTests.m */,
-				5049E8091827F56700AEFD69 /* Supporting Files */,
-			);
-			path = FXColorSpaceTests;
-			sourceTree = "<group>";
-		};
-		5049E8091827F56700AEFD69 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5049E80A1827F56700AEFD69 /* FXColorSpaceTests-Info.plist */,
-				5049E80B1827F56700AEFD69 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,24 +179,6 @@
 			productReference = 5007BD4618281633005ED5F2 /* FXColorSpaceApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5007BD6118281633005ED5F2 /* FXColorSpaceAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5007BD7318281633005ED5F2 /* Build configuration list for PBXNativeTarget "FXColorSpaceAppTests" */;
-			buildPhases = (
-				5007BD5E18281633005ED5F2 /* Sources */,
-				5007BD5F18281633005ED5F2 /* Frameworks */,
-				5007BD6018281633005ED5F2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5007BD6718281633005ED5F2 /* PBXTargetDependency */,
-			);
-			name = FXColorSpaceAppTests;
-			productName = FXColorSpaceAppTests;
-			productReference = 5007BD6218281633005ED5F2 /* FXColorSpaceAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -277,11 +188,6 @@
 				CLASSPREFIX = FX;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Max Lunin";
-				TargetAttributes = {
-					5007BD6118281633005ED5F2 = {
-						TestTargetID = 5007BD4518281633005ED5F2;
-					};
-				};
 			};
 			buildConfigurationList = 5049E7D81827F56600AEFD69 /* Build configuration list for PBXProject "FXColorSpace" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -297,7 +203,6 @@
 			projectRoot = "";
 			targets = (
 				5007BD4518281633005ED5F2 /* FXColorSpaceApp */,
-				5007BD6118281633005ED5F2 /* FXColorSpaceAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -310,14 +215,6 @@
 				5007BD5D18281633005ED5F2 /* Images.xcassets in Resources */,
 				5007BD4F18281633005ED5F2 /* InfoPlist.strings in Resources */,
 				5007BD5818281633005ED5F2 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5007BD6018281633005ED5F2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5007BD6D18281633005ED5F2 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,23 +239,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5007BD5E18281633005ED5F2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5007BD6F18281633005ED5F2 /* FXColorSpaceAppTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5007BD6718281633005ED5F2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5007BD4518281633005ED5F2 /* FXColorSpaceApp */;
-			targetProxy = 5007BD6618281633005ED5F2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5007BD4D18281633005ED5F2 /* InfoPlist.strings */ = {
@@ -375,22 +256,6 @@
 				5007BD5718281633005ED5F2 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5007BD6B18281633005ED5F2 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5007BD6C18281633005ED5F2 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		5049E80B1827F56700AEFD69 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5049E80C1827F56700AEFD69 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -425,48 +290,6 @@
 				INFOPLIST_FILE = "FXColorSpaceApp/FXColorSpaceApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		5007BD7418281633005ED5F2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FXColorSpaceApp.app/FXColorSpaceApp";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FXColorSpaceApp/FXColorSpaceApp-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "FXColorSpaceAppTests/FXColorSpaceAppTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		5007BD7518281633005ED5F2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FXColorSpaceApp.app/FXColorSpaceApp";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FXColorSpaceApp/FXColorSpaceApp-Prefix.pch";
-				INFOPLIST_FILE = "FXColorSpaceAppTests/FXColorSpaceAppTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -552,14 +375,7 @@
 				5007BD7218281633005ED5F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		5007BD7318281633005ED5F2 /* Build configuration list for PBXNativeTarget "FXColorSpaceAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5007BD7418281633005ED5F2 /* Debug */,
-				5007BD7518281633005ED5F2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5049E7D81827F56600AEFD69 /* Build configuration list for PBXProject "FXColorSpace" */ = {
 			isa = XCConfigurationList;
