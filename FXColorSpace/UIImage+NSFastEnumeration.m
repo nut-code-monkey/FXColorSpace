@@ -8,61 +8,94 @@
 
 #import "UIImage+NSFastEnumeration.h"
 #import "UIColor+FXColorSpace.h"
+#import <objc/runtime.h>
+
+static char fastEnumeratedBytesKey;
 
 @implementation UIImage (NSFastEnumeration)
+
+-(uint8_t*)FX_fastEnumeratedBytes
+{
+    NSValue* value = objc_getAssociatedObject(self, &fastEnumeratedBytesKey);
+    return [value pointerValue];
+}
+
+-(void)FX_setFastEnumeratedBytes:( uint8_t* )bytes
+{
+    NSValue* value = objc_getAssociatedObject(self, &fastEnumeratedBytesKey);
+    uint8_t* oldBytes = [value pointerValue];
+    if (oldBytes != bytes)
+    {
+        free(oldBytes);
+    }
+    if (bytes)
+    {
+        objc_setAssociatedObject(self, &fastEnumeratedBytesKey, [NSValue valueWithPointer:bytes], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+    else
+    {
+        objc_setAssociatedObject(self, &fastEnumeratedBytesKey, nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+}
 
 - (NSUInteger)countByEnumeratingWithState:( NSFastEnumerationState* )state
                                   objects:( id __unsafe_unretained [] )buffer
                                     count:( NSUInteger )bufferLength
 {
-    if(state->state == 0) state->mutationsPtr = &state->extra[0];
+    static NSMutableDictionary* staticBytes = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{ staticBytes = [NSMutableDictionary dictionary]; });
     
-    const size_t BYTES = 1;
+    if(state->state == 0)
+    {
+        state->mutationsPtr = &state->extra[0];
+    }
+
     const size_t WIDTH = 2;
     const size_t HEIGHT = 3;
     const size_t BYTES_PER_ROW = 4;
 
-    if (state->extra[BYTES] == 0)
+    uint8_t* bytes = [self FX_fastEnumeratedBytes];
+    if (!bytes)
     {
         CGImageRef imageRef = self.CGImage;
         CGDataProviderRef dataProvider = CGImageGetDataProvider(imageRef);
         CFDataRef bitmapData = CGDataProviderCopyData(dataProvider);
         const void* imageBytes = CFDataGetBytePtr(bitmapData);
-        uint8_t* bytes = malloc(sizeof(imageBytes));
-        memcpy(bytes, imageBytes, sizeof(imageBytes));
         
-        state->extra[BYTES] = (typeof(state->extra[BYTES]))bytes;
         state->extra[WIDTH] = CGImageGetWidth(imageRef);
         state->extra[HEIGHT] = CGImageGetHeight(imageRef);
         state->extra[BYTES_PER_ROW] = CGImageGetBytesPerRow(imageRef);
         
+        bytes = malloc(state->extra[BYTES_PER_ROW]*state->extra[HEIGHT]);
+        memcpy(bytes, imageBytes, state->extra[BYTES_PER_ROW]*state->extra[HEIGHT]);
         CFRelease(bitmapData);
+        
+        [self FX_setFastEnumeratedBytes:bytes];
     }
+
+    const size_t totalBytesCount = state->extra[BYTES_PER_ROW]*state->extra[HEIGHT];
     
-    const size_t totalPixelsCount = state->extra[WIDTH]*state->extra[HEIGHT];
-    NSUInteger count = 0;
-    if(state->state < totalPixelsCount)
+    NSUInteger outColors = 0;
+    
+    if(state->state < totalBytesCount)
     {
         state->itemsPtr = buffer;
-        uint8_t* bytes = (uint8_t*)state->extra[1];
-        
-        for (;(count < bufferLength) && state->state < totalPixelsCount; ++count, state->state++)
+        for (;(outColors < bufferLength) && state->state < totalBytesCount; ++outColors, state->state += 4)
         {
-            size_t y = state->state / state->extra[WIDTH];
-            size_t x = state->state % state->extra[WIDTH];
-            const size_t i = (state->extra[BYTES_PER_ROW] * y) + (x * 4);
-            buffer[count] = [UIColor FX_colorWithRGBA:FX_RGBA_Make(bytes[i], bytes[i+1], bytes[i+2], bytes[i+3])];
+            buffer[outColors] = [UIColor FX_colorWithRGBA:FX_RGBA_Make(bytes[state->state],
+                                                                   bytes[state->state+1],
+                                                                   bytes[state->state+2],
+                                                                   bytes[state->state+3])];
         }
-        return count;
+        return outColors;
     }
     else
     {
-        uint8_t* bytes = (uint8_t*)state->extra[BYTES];
-        free(bytes);
-        
+        [self FX_setFastEnumeratedBytes:nil];
         return 0;
     }
-    return count;
+    return outColors;
 }
 
 @end

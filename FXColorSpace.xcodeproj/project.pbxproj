@@ -138,9 +138,9 @@
 		5049E7E61827F56600AEFD69 /* FXColorSpace */ = {
 			isa = PBXGroup;
 			children = (
+				5007BD7818281F86005ED5F2 /* FXColorSpace.h */,
 				5007BD7618281F86005ED5F2 /* FXColorModels.h */,
 				5007BD7718281F86005ED5F2 /* FXColorModels.m */,
-				5007BD7818281F86005ED5F2 /* FXColorSpace.h */,
 				5007BD7918281F86005ED5F2 /* UIColor+FXColorSpace.h */,
 				5007BD7A18281F86005ED5F2 /* UIColor+FXColorSpace.m */,
 				5007BD7B18281F86005ED5F2 /* UIImage+FXAlpha.h */,
