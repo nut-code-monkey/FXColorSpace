@@ -42,22 +42,16 @@ static char fastEnumeratedBytesKey;
                                   objects:( id __unsafe_unretained [] )buffer
                                     count:( NSUInteger )bufferLength
 {
-    static NSMutableDictionary* staticBytes = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{ staticBytes = [NSMutableDictionary dictionary]; });
-    
-    if(state->state == 0)
-    {
-        state->mutationsPtr = &state->extra[0];
-    }
-
     const size_t WIDTH = 2;
     const size_t HEIGHT = 3;
     const size_t BYTES_PER_ROW = 4;
-
+    
     uint8_t* bytes = [self FX_fastEnumeratedBytes];
     if (!bytes)
     {
+        state->state = 0;
+        state->mutationsPtr = &state->extra[0];
+        
         CGImageRef imageRef = self.CGImage;
         CGDataProviderRef dataProvider = CGImageGetDataProvider(imageRef);
         CFDataRef bitmapData = CGDataProviderCopyData(dataProvider);
