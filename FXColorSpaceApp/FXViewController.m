@@ -19,19 +19,38 @@
 {
     [super viewDidLoad];
     
-    UIImage* image = [UIImage FX_imageWitSize:CGSizeMake(100, 100)
-                                    generator:^RGBA(size_t x, size_t y)
-                      {
-                          if( ((x % 20)<10) ^ ((y % 20) < 10) )
-                              return FX_RGBA_Make(200, 200, 200, UCHAR_MAX);
-                          else
-                              return FX_RGBA_Make(UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX);
-                      }];
-    self.imageView.image = image;
+    UIImage* uiImage = [UIImage FX_imageWitSize:CGSizeMake(100, 100)
+                                           generator:^RGBA(FXPoint point)
+                             {
+                                 if( (point.x%20 < 10) ^ (point.y%20 < 10) )
+                                     return FX_RGBA_Make(200, 200, 200, UCHAR_MAX);
+                                 else
+                                     return FX_RGBA_Make(UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX);
+                             }];
+    self.imageView.image = uiImage;
     
-    for (UIColor* color in image)
-    {
+    double brightnessSum = 0;
+    for (UIColor* color in uiImage){
+        brightnessSum += color.FX_hsba.component.brightness;
     }
+    double averageImageBrightness = brightnessSum / (uiImage.size.width*uiImage.size.height);
+    NSLog(@"avg: %f", averageImageBrightness);
+    
+    CGPoint somePoint = CGPointMake(20, 20);
+    [uiImage FX_enumerateAllPixelsRGBA:^(RGBA rgba, FXPoint point, BOOL *stop) {
+        double manhattanDistance = ABS(somePoint.x - point.x) + ABS(somePoint.y - point.y);
+        // do something with distance for point
+    }];
+    
+UIImage* redDecreasedImage = [uiImage FX_imageByMutatePixelsRGBA:^(RGBA rgba, FXPoint point, BOOL *update, BOOL *stop)
+                              {
+                                  if ((point.x % 10 < 5) ^ (point.y%10 < 5))
+                                  {
+                                      rgba.component.r -= 100;
+                                  }
+                                  return rgba;
+                              }];
+    NSLog(@"%@", redDecreasedImage);
 }
 
 

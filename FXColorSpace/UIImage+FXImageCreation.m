@@ -43,12 +43,12 @@ size_t FX_map(size_t x, size_t in_min, size_t in_max, size_t out_min, size_t out
         histB[i] = FX_map(histB[i], 0, hist_max, 0, size.height);
     }
     UIImage* image = [UIImage FX_imageWitSize:size
-                                    generator:^RGBA(size_t x, size_t y)
+                                    generator:^RGBA(FXPoint point)
                       {
-                          size_t i = FX_map(x, 0, size.width, 0, UCHAR_MAX);
-                          return FX_RGBA_Make(histR[i] < y ? 100 : 0,
-                                              histG[i] < y ? 150 : 0,
-                                              histB[i] < y ? 200 : 0,
+                          size_t i = FX_map(point.x, 0, size.width, 0, UCHAR_MAX);
+                          return FX_RGBA_Make(histR[i] < point.y ? 100 : 0,
+                                              histG[i] < point.y ? 150 : 0,
+                                              histB[i] < point.y ? 200 : 0,
                                               255);
                       }];
     free(histR);
@@ -80,7 +80,7 @@ size_t FX_map(size_t x, size_t in_min, size_t in_max, size_t out_min, size_t out
         {
             const size_t i = rowStart + pixelStart;
 
-            RGBA rgba = generator(x, y);
+            RGBA rgba = generator(FXMakePoint(x, y));
             for (size_t chanel = 0; chanel < 4; ++chanel)
             {
                 pixelBuffer[i+chanel] = rgba.components[chanel];

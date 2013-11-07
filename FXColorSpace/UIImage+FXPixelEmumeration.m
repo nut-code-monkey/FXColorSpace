@@ -129,20 +129,25 @@ FXPoint FXMakePoint(size_t x, size_t y)
     CGImageRef imageRef = self.CGImage;
     CGDataProviderRef dataProvider = CGImageGetDataProvider(imageRef);
     CFDataRef bitmapData = CGDataProviderCopyData(dataProvider);
-    uint8_t* bufferData = (uint8_t*)CFDataGetBytePtr(bitmapData);
-    
+    uint8_t* bitmapImageBufferData = (uint8_t*)CFDataGetBytePtr(bitmapData);
+        
     size_t width = CGImageGetWidth(imageRef);
     size_t height = CGImageGetHeight(imageRef);
     size_t bytesPerRow = CGImageGetBytesPerRow(imageRef);
+    size_t bitsPerComponent = CGImageGetBitsPerComponent(imageRef);
 
+    uint8_t* buffer = malloc(bytesPerRow*height);
+    memcpy(buffer, bitmapImageBufferData, bytesPerRow*height);
+    CFRelease(bitmapData);
+    
     UIImage* (^createImage)() = ^()
     {
         CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
         
-        CGContextRef newBitmapContext = CGBitmapContextCreate(bufferData,
+        CGContextRef newBitmapContext = CGBitmapContextCreate(buffer,
                                                               width,
                                                               height,
-                                                              CGImageGetBitsPerComponent(imageRef),
+                                                              bitsPerComponent,
                                                               bytesPerRow,
                                                               colorSpace,
                                                               kCGBitmapByteOrderDefault|kCGImageAlphaNoneSkipLast);
@@ -168,15 +173,14 @@ FXPoint FXMakePoint(size_t x, size_t y)
             const size_t G = i + 1;
             const size_t B = i + 2;
             const size_t A = i + 3;
-            
-            const RGBA rgba = FX_RGBA_Make(bufferData[R], bufferData[G], bufferData[B], bufferData[A]);
-            
+
+            const RGBA rgba = FX_RGBA_Make(buffer[R], buffer[G], buffer[B], buffer[A]);
             BOOL update = NO;
             RGBA outPixel = rgbaEnumerator(rgba, FXMakePoint(x, y), &update, &stop);
-            bufferData[R] = outPixel.components[R];
-            bufferData[G] = outPixel.components[G];
-            bufferData[B] = outPixel.components[B];
-            bufferData[A] = outPixel.components[A];
+            buffer[R] = outPixel.component.r;
+            buffer[G] = outPixel.component.g;
+            buffer[B] = outPixel.component.b;
+            buffer[A] = outPixel.component.a;
             
             if (stop) break;
             shouldUpdate = update?:shouldUpdate;
@@ -188,7 +192,7 @@ FXPoint FXMakePoint(size_t x, size_t y)
     }
     
     UIImage* returnImage = createImage();
-    CFRelease(bitmapData);
+    free(buffer);
     return returnImage;
 }
 

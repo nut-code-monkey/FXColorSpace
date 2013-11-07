@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "FXColorSpace.h"
 
-typedef RGBA(^FXImageGRBAGenerator)(size_t x, size_t y);
+typedef RGBA(^FXImageGRBAGenerator)(FXPoint point);
 
 @interface UIImage (FXImageCreation)
 
