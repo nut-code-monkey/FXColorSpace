@@ -24,6 +24,10 @@
 		5007BD8C18281F86005ED5F2 /* UIImage+FXResize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD8218281F86005ED5F2 /* UIImage+FXResize.m */; };
 		5007BD8D18281F86005ED5F2 /* UIImage+FXRoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD8418281F86005ED5F2 /* UIImage+FXRoundedCorner.m */; };
 		5007BD8E18281F86005ED5F2 /* UIImage+NSFastEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD8618281F86005ED5F2 /* UIImage+NSFastEnumeration.m */; };
+		50C726071A4195D300508E6D /* FXColorSpacePixelEnumerationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C726061A4195D300508E6D /* FXColorSpacePixelEnumerationTests.m */; };
+		50C7260B1A41961100508E6D /* UIImage+FXPixelEmumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD8018281F86005ED5F2 /* UIImage+FXPixelEmumeration.m */; };
+		50C7260E1A41ABCA00508E6D /* FXColorModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD7718281F86005ED5F2 /* FXColorModels.m */; };
+		50C7260F1A41AD4B00508E6D /* UIImage+FXImageCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007BD7E18281F86005ED5F2 /* UIImage+FXImageCreation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +66,9 @@
 		5049E8311827F7BA00AEFD69 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		5049E8391828112F00AEFD69 /* FXColorSpace.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = FXColorSpace.podspec; sourceTree = "<group>"; };
 		5049E83A1828112F00AEFD69 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		50C726021A4195D300508E6D /* FXColorSpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FXColorSpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C726051A4195D300508E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C726061A4195D300508E6D /* FXColorSpacePixelEnumerationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXColorSpacePixelEnumerationTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +79,13 @@
 				5007BD4818281633005ED5F2 /* CoreGraphics.framework in Frameworks */,
 				5007BD4918281633005ED5F2 /* UIKit.framework in Frameworks */,
 				5007BD4718281633005ED5F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C725FF1A4195D300508E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +125,7 @@
 				5049E8311827F7BA00AEFD69 /* README.md */,
 				5049E7E61827F56600AEFD69 /* FXColorSpace */,
 				5007BD4A18281633005ED5F2 /* FXColorSpaceApp */,
+				50C726031A4195D300508E6D /* FXColorSpaceTests */,
 				5049E7DF1827F56600AEFD69 /* Frameworks */,
 				5049E7DE1827F56600AEFD69 /* Products */,
 			);
@@ -120,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				5007BD4618281633005ED5F2 /* FXColorSpaceApp.app */,
+				50C726021A4195D300508E6D /* FXColorSpaceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +175,23 @@
 			path = FXColorSpace;
 			sourceTree = "<group>";
 		};
+		50C726031A4195D300508E6D /* FXColorSpaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				50C726061A4195D300508E6D /* FXColorSpacePixelEnumerationTests.m */,
+				50C726041A4195D300508E6D /* Supporting Files */,
+			);
+			path = FXColorSpaceTests;
+			sourceTree = "<group>";
+		};
+		50C726041A4195D300508E6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50C726051A4195D300508E6D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,6 +212,23 @@
 			productReference = 5007BD4618281633005ED5F2 /* FXColorSpaceApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		50C726011A4195D300508E6D /* FXColorSpaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C7260A1A4195D300508E6D /* Build configuration list for PBXNativeTarget "FXColorSpaceTests" */;
+			buildPhases = (
+				50C725FE1A4195D300508E6D /* Sources */,
+				50C725FF1A4195D300508E6D /* Frameworks */,
+				50C726001A4195D300508E6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FXColorSpaceTests;
+			productName = FXColorSpaceTests;
+			productReference = 50C726021A4195D300508E6D /* FXColorSpaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -188,6 +238,11 @@
 				CLASSPREFIX = FX;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Max Lunin";
+				TargetAttributes = {
+					50C726011A4195D300508E6D = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
 			};
 			buildConfigurationList = 5049E7D81827F56600AEFD69 /* Build configuration list for PBXProject "FXColorSpace" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -203,6 +258,7 @@
 			projectRoot = "";
 			targets = (
 				5007BD4518281633005ED5F2 /* FXColorSpaceApp */,
+				50C726011A4195D300508E6D /* FXColorSpaceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -215,6 +271,13 @@
 				5007BD5D18281633005ED5F2 /* Images.xcassets in Resources */,
 				5007BD4F18281633005ED5F2 /* InfoPlist.strings in Resources */,
 				5007BD5818281633005ED5F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C726001A4195D300508E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +299,17 @@
 				5007BD8718281F86005ED5F2 /* FXColorModels.m in Sources */,
 				5007BD8A18281F86005ED5F2 /* UIImage+FXImageCreation.m in Sources */,
 				5007BD8818281F86005ED5F2 /* UIColor+FXColorSpace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C725FE1A4195D300508E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C726071A4195D300508E6D /* FXColorSpacePixelEnumerationTests.m in Sources */,
+				50C7260B1A41961100508E6D /* UIImage+FXPixelEmumeration.m in Sources */,
+				50C7260F1A41AD4B00508E6D /* UIImage+FXImageCreation.m in Sources */,
+				50C7260E1A41ABCA00508E6D /* FXColorModels.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +439,58 @@
 			};
 			name = Release;
 		};
+		50C726081A4195D300508E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = FXColorSpaceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50C726091A4195D300508E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = FXColorSpaceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -385,6 +511,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		50C7260A1A4195D300508E6D /* Build configuration list for PBXNativeTarget "FXColorSpaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C726081A4195D300508E6D /* Debug */,
+				50C726091A4195D300508E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

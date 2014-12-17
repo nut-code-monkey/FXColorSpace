@@ -13,7 +13,7 @@ typedef RGBA(^FXImageGRBAGenerator)(FXPoint point);
 
 @interface UIImage (FXImageCreation)
 
--(instancetype)FX_hystogrammWithSize:( CGSize )size;
-+(instancetype)FX_imageWitSize:( CGSize )size generator:( FXImageGRBAGenerator )generator;
+-(instancetype)FX_hystogrammWithSize:( FXSize )size;
++(instancetype)FX_imageWitSize:( FXSize )size generator:( FXImageGRBAGenerator )generator;
 
 @end

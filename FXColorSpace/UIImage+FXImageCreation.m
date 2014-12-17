@@ -18,7 +18,7 @@ size_t FX_map(size_t x, size_t in_min, size_t in_max, size_t out_min, size_t out
     return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
--(instancetype)FX_hystogrammWithSize:( CGSize )size
+-(instancetype)FX_hystogrammWithSize:( FXSize )size
 {
     size_t* histR = calloc(UCHAR_MAX, sizeof(size_t));
     size_t* histG = calloc(UCHAR_MAX, sizeof(size_t));
@@ -57,16 +57,15 @@ size_t FX_map(size_t x, size_t in_min, size_t in_max, size_t out_min, size_t out
     return image;
 }
 
-+(instancetype)FX_imageWitSize:( CGSize )size generator:( FXImageGRBAGenerator )generator
++(instancetype)FX_imageWitSize:( FXSize )size generator:( FXImageGRBAGenerator )generator
 {
-    NSParameterAssert(!CGSizeEqualToSize(size, CGSizeZero));
+    NSParameterAssert(size.height);
+    NSParameterAssert(size.width);
     NSParameterAssert(generator);
 
-    size_t width = size.width;
-    size_t height = size.height;
-    size_t bytesPerRow = 4*width;
+    size_t bytesPerRow = 4*size.width;
 
-    uint8_t* pixelBuffer = (uint8_t*)malloc(bytesPerRow*height);
+    uint8_t* pixelBuffer = (uint8_t*)malloc(bytesPerRow*size.height);
     if(!pixelBuffer)
     {
         NSLog(@"No pixelbuffer");
@@ -74,7 +73,7 @@ size_t FX_map(size_t x, size_t in_min, size_t in_max, size_t out_min, size_t out
         return nil;
     }
     
-    for (size_t y = 0; y < height; ++y)
+    for (size_t y = 0; y < size.height; ++y)
     {
         for (size_t x = 0, rowStart = bytesPerRow*y, pixelStart = 0; pixelStart < bytesPerRow; pixelStart+=4, ++x)
         {
@@ -91,8 +90,8 @@ size_t FX_map(size_t x, size_t in_min, size_t in_max, size_t out_min, size_t out
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     
     CGContextRef context = CGBitmapContextCreate(pixelBuffer,
-                                                 width,
-                                                 height,
+                                                 size.width,
+                                                 size.height,
                                                  8,
                                                  bytesPerRow,
                                                  colorSpace,

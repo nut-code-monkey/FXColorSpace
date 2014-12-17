@@ -15,7 +15,21 @@ typedef struct
     size_t y;
 } FXPoint;
 
+typedef struct
+{
+    size_t width;
+    size_t height;
+} FXSize;
+
+typedef struct
+{
+    FXPoint origin;
+    FXSize size;
+} FXRect;
+
 FXPoint FXMakePoint(size_t x, size_t y);
+FXSize FXMakeSize(size_t width, size_t height);
+FXRect FXMakeRect(size_t x, size_t y, size_t width, size_t height);
 
 typedef void(^RGBAPixelsEnumerator)(RGBA rgba, FXPoint point, BOOL* stop);
 typedef void(^HSBAPixelsEnumerator)(HSBA hsba, FXPoint point, BOOL* stop);
@@ -26,6 +40,8 @@ typedef void(^FXUpdateImageCallback)(UIImage* image);
 @interface UIImage (FXPixelEmumeration)
 
 -(void)FX_enumerateColors:( UIColorPixelEnumerator )colorEnumerator;
+
+-(BOOL)FX_enumeratePixelsInFrame:( FXRect )frame rgbaEnumerator:( RGBAPixelsEnumerator )rgbaEnumerator;
 
 -(void)FX_enumerateAllPixelsRGBA:( RGBAPixelsEnumerator )rgbaEnumerator;
 

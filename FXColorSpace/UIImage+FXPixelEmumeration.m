@@ -14,6 +14,16 @@ FXPoint FXMakePoint(size_t x, size_t y)
     return (FXPoint){x, y};
 }
 
+FXSize FXMakeSize(size_t width, size_t height)
+{
+    return (FXSize){width, height};
+}
+
+FXRect FXMakeRect(size_t x, size_t y, size_t width, size_t height)
+{
+    return (FXRect){ ((FXPoint){x, y}), ((FXSize){width, height})};
+}
+
 @implementation UIImage (FXPixelEmumeration)
 
 -(void)FX_enumerateColors:( UIColorPixelEnumerator )uiColorEnumerator
@@ -51,6 +61,54 @@ FXPoint FXMakePoint(size_t x, size_t y)
 -(void)FX_enumerateAllPixelsRGBA:( RGBAPixelsEnumerator )rgbaEnumerator;
 {
     [self FX_enumerateAllPixelsRGBA:rgbaEnumerator HSBA:nil];
+}
+
+-(BOOL)FX_enumeratePixelsInFrame:( FXRect )frame rgbaEnumerator:( RGBAPixelsEnumerator )rgbaEnumerator
+{
+    CGImageRef imageRef = self.CGImage;
+    
+    CGDataProviderRef dataProvider = CGImageGetDataProvider(imageRef);
+    CFDataRef bitmapData = CGDataProviderCopyData(dataProvider);
+    uint8_t* imageBytes = (uint8_t*)CFDataGetBytePtr(bitmapData);
+    
+    const size_t height = CGImageGetHeight(imageRef);
+    const size_t width = CGImageGetWidth(imageRef);
+    const size_t bytesPerRow = CGImageGetBytesPerRow(imageRef);
+    const size_t bitPerPixel = CGImageGetBitsPerPixel(imageRef);
+    const size_t bitPerComponent = CGImageGetBitsPerComponent(imageRef);
+    
+    const size_t bytesPerPixel = bitPerPixel / bitPerComponent;
+    
+    BOOL stop = NO;
+
+    const size_t toY = frame.origin.y + frame.size.height;
+    const size_t toX = frame.origin.x + frame.size.width;
+    
+    if (frame.origin.x >= width || toX >= width || frame.origin.y >= height || toY >= height)
+    {
+        return NO;
+    }
+    
+    for (size_t y = frame.origin.y; y < toY && !stop; ++y)
+    {
+        size_t bytesTo = toX * bytesPerPixel;
+        for (size_t x = frame.origin.x, rowStart = bytesPerRow*y, pixelStart = frame.origin.x * bytesPerPixel;
+             pixelStart < bytesTo; pixelStart+=bytesPerPixel, ++x)
+        {
+            size_t i = rowStart + pixelStart;
+            
+            const size_t R = i;
+            const size_t G = i + 1;
+            const size_t B = i + 2;
+            const size_t A = i + 3;
+            
+            RGBA rgbaPixel = FX_RGBA_Make(imageBytes[R], imageBytes[G], imageBytes[B], imageBytes[A]);
+            
+            rgbaEnumerator(rgbaPixel, FXMakePoint(x, y), &stop);
+            if (stop) break;
+        }
+    }
+    return YES;
 }
 
 -(void)FX_enumerateAllPixelsRGBA:( RGBAPixelsEnumerator )rgbaEnumerator
