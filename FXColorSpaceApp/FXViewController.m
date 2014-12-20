@@ -19,7 +19,7 @@
 {
     [super viewDidLoad];
     
-    UIImage* uiImage = [UIImage FX_imageWitSize:CGSizeMake(100, 100)
+    UIImage* uiImage = [UIImage FX_imageWitSize:FXMakeSize(100, 100)
                                            generator:^RGBA(FXPoint point)
                              {
                                  if( (point.x%20 < 10) ^ (point.y%20 < 10) )

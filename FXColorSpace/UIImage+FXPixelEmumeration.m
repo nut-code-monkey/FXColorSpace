@@ -86,6 +86,7 @@ FXRect FXMakeRect(size_t x, size_t y, size_t width, size_t height)
     
     if (frame.origin.x >= width || toX >= width || frame.origin.y >= height || toY >= height)
     {
+        CFRelease(bitmapData);
         return NO;
     }
     
@@ -108,6 +109,9 @@ FXRect FXMakeRect(size_t x, size_t y, size_t width, size_t height)
             if (stop) break;
         }
     }
+    
+    CFRelease(bitmapData);
+    
     return YES;
 }
 
